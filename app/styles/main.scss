@@ -5,6 +5,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 #wrap{
     
 }
+a{
+    outline: none !important;
+}
 #header{
     width:100%;
     height:65px;
@@ -482,7 +485,35 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     }
 }
 #content_noticias{
+    position: relative;
+    top: 60px;
     .article_post{
+        width: 980px;
+        .content_post{
+            padding: 10px;
+            float: right;
+            width: 760px;
+            .post_image{
+            }
+            .post_content{
+                text-align: left;
+                h4{
+                    font-size: 19px;
+                    color: #808080;
+                    font-weight: bold;
+                }
+                p{
+                    margin: 0 0 20px 0px;
+                    text-align: left;
+                    padding-bottom: 8px;
+                }
+                a{
+                    color: #24C5BA;
+                    text-decoration: none;
+                }
+            }
+
+        }
         .side_assets{
             background: #f6f6f6;
             border-radius: 3px;
@@ -540,14 +571,214 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
             }
         }
     }
+
+}
+#comments{
+    clear: both;
+    text-align: left;
+    .comments_post{
+        color: #656565;
+        font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0 0 9px;
+        padding-top: 10px;
+        .item_comment{
+            border-top: 1px dashed #dedede;
+            overflow: hidden;
+            padding: 34px 0px 20px 83px;
+            position: relative;
+            vertical-align: top;
+            .avatar_comment{
+                background: none repeat scroll 0 0 #FFFFFF;
+                border: 1px solid #DDDDDD;
+                height: 32px;
+                left: 3px;
+                padding: 3px 3px 4px;
+                position: absolute;
+                top: 88px;
+                width: 32px;
+            }
+            .content_comment{
+                min-height: 46px;
+                overflow: hidden;
+                padding: 8px 10px 6px 25px;
+                font-size: 14px;
+                h4.name{
+                    font-size: 19px;
+                    font-weight: 500;
+                    color: #212127;
+                }
+                .date{
+                    font-size: 13px;
+                    font-style: italic;
+                }
+                .comment_box{
+                    border: 1px solid #dedede;
+                    min-height: 46px;
+                    overflow: hidden;
+                    padding: 8px 10px 6px 25px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+#comments_form{
+    h4{
+        color: #656565;
+        font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0 0 9px;
+        padding-top: 10px;
+    }
+    p{
+        font-size: 14px;
+    }
+    #comment_form{
+        font-size: 13px;
+        .label{
+            font-size: 13px;
+            display: block;
+        }
+        input, textarea{
+            width: 90%!important;
+            display: block;
+            margin: 0px 0px 10px 0px;
+        }
+        #submit_comment{
+            width: 130px !important;
+            padding: 15px;
+            background: #24C5BA;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-shadow: none;
+            color: #FFF;
+            font-weight: 300;
+            transition: all linear 0.15s;
+            -ms-transition: all linear 0.15s;
+            -moz-transition: all linear 0.15s;
+            -webkit-transition: all linear 0.15s;
+            -o-transition: all linear 0.15s;
+        }
+        #submit_comment:hover{
+            background: #999;
+            color: #FFF;
+            transition: all linear 0.15s;
+            -ms-transition: all linear 0.15s;
+            -moz-transition: all linear 0.15s;
+            -webkit-transition: all linear 0.15s;
+            -o-transition: all linear 0.15s;
+        }
+    }
+}
+#content_help{
+    width: 980px;
+    position: relative;
+    top:70px;
+    text-align: left;
+    .aq_alert, .note{
+        background-color: #FFFCE5;
+        border: 1px solid #ffdc7d;
+        color: #D69A2A;
+        width: 460px;
+        padding: 20px;
+    }
+}
+#faq{
+    margin: 50px 0;
+    #nav_faq{
+        border-right: 1px dashed #dddddd;
+        width: 470px;
+        float: left;
+        ul {
+            margin: 0px;
+            padding: 0px;
+            li{
+                float: none;
+                margin-bottom: -1px;
+                line-height: 32px;
+                list-style: none;
+                padding: 5px;
+                width: 100%;
+                a{
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    line-height: 20px;
+                    border: 1px solid transparent;
+                    -webkit-border-radius: 4px 4px 0 0;
+                    -moz-border-radius: 4px 4px 0 0;
+                    border-radius: 4px 4px 0 0;
+                    border-style: dashed;
+                    color: #212127;
+                    font-weight: 500;
+                    width: 100%;
+                    display: block;
+                }
+                a:hover{
+                    border-color: #eee #ddd #eee #eee;
+                    color: #24C5BA;
+                    text-decoration: none;
+                    background-color: #eee;
+                }
+
+            }
+            .active > a{
+                    background-color: #24C5BA;
+                    color: #fff;
+                }
+        }
+    }
+    #tab_content{
+        width: 490px;
+        float: right;
+        p{
+            margin: 0 0 10px;
+        }
+    }
+}
+#responsive_nav_container{
+    width: 60%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    right: 0px;
+    z-index: 2000;
+    display: none;
 }
 /* Responsive: Portrait tablets and up */
+@media screen and (max-width: 1200px){
+
+}
 @media screen and (max-width:980px){
     #responsive_button{
         display:block;
+        margin: 20px;
+    }
+    #responsive_nav_container{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #sidebar{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+    #content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        .content_entry{
+            width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+        }
     }
 }
 @media screen and (min-width: 768px) {
+
     .container {
         max-width: 730px;
     }
