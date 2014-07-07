@@ -1,4 +1,4 @@
-@media all and (max-width: 980px){
+@media only screen and (max-width: 980px){
     
     #header{
         height: 85px;
@@ -104,8 +104,9 @@
         width: 100%;
         margin: 0 auto;
         .item_game{
-            width: 100%;
-            margin: 0 auto;
+            width: 46%;
+            margin: 0 10px;
+            float: left;
             .game{
                 width:auto;
             }
@@ -149,15 +150,98 @@
         width: 100%;
         margin: 0 auto;
         .item_download{
-            width: 50%;
-            margin: 0 auto;
+            width: 46%;
+            margin: 0 10px;
             float: left;
             .download{
                 width:auto;
             }
         }
     }
+    #sidebar{
+        .image_about{
+            width:60%;
+        }
+    }
 }
+@media only screen and (max-width:520px){
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            .game{
+                width:auto;
+            }
+        }
+    }
+    #container_download{
+        width: 100%;
+        margin: 0 auto;
+        .item_download{
+           width: 100%;
+            margin: 0 auto;
+            float: none;
+            .download{
+                width:auto;
+            }
+        }
+    }
+}
+/*@media only screen and (max-width: 760px){
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            .game{
+                width:auto;
+            }
+        }
+    }
+    #container_download{
+        width: 100%;
+        margin: 0 auto;
+        .item_download{
+           width: 100%;
+            margin: 0 auto;
+            float: none;
+            .download{
+                width:auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width:520px){
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            .game{
+                width:auto;
+            }
+        }
+    }
+    #container_download{
+        width: 100%;
+        margin: 0 auto;
+        .item_download{
+           width: 100%;
+            margin: 0 auto;
+            float: none;
+            .download{
+                width:auto;
+            }
+        }
+    }
+}*/
 /*@media screen and (min-width: 979px){
     #container_games{
         width: 100%;
