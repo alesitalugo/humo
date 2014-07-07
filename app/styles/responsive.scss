@@ -158,6 +158,19 @@
         }
     }
 }
+/*@media screen and (min-width: 979px){
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 45%;
+            margin: 0 5px;
+            .game{
+                width:auto;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 520px) {
     #container_download{
@@ -171,5 +184,15 @@
     
 }
 @media screen and (min-width:520px){
-    
-}
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 100%;
+            margin: 0 auto;
+            .game{
+                width:auto;
+            }
+        }
+    }
+}*/
