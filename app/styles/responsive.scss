@@ -1,0 +1,175 @@
+@media all and (max-width: 980px){
+    
+    #header{
+        height: 85px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+        .logo{
+            float: left;
+            width: auto;
+            margin: 0;
+            width: 15%;
+            .responsive_logo{
+                display: block;
+            }
+            h1{
+                display: none;
+            }
+        }
+        #nav{
+            float: left;
+            width: 85%;
+            margin: 25px 0;
+            #nav_main{
+                margin: 0;
+                padding: 0;
+                float: left;
+                li{
+
+                }
+            }
+        }
+    }
+
+    #social_networks{ display: none; }
+
+    #content_help{
+        .aq_alert, .note{
+            width: 90%;
+            margin: 0 auto;
+        }
+        width: 100%;
+        margin: 0 auto;
+    }
+    #faq{
+        #nav_faq{
+            width: 100%;
+            float: none;
+            border-bottom: 1px dashed #dddddd;
+            padding: 10px 0px;
+            border-right: none;
+        }
+        #tab_content{
+            width: 100%;
+            float: none;
+            margin-top: 15px;
+        }
+    }
+
+    #social_networks{
+        margin: 0px auto;
+        padding: 0px;
+        float: none;
+        width: 60%;
+    }
+    #sidebar{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+    #content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        .content_entry{
+            width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    }
+    #content_noticias {
+        .article_post{
+            width: 100%;
+            margin: 0 auto;
+            .side_assets{
+                width: 100%;
+                float: none;
+                .post_meta{
+                    padding: 15px 0 25px 0;
+                    .post_views{
+                        clear: none;
+                        margin: 7px 0px;
+                    }
+                }
+            }
+            .content_post{
+            float: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            }
+        }
+    }
+    #container_games{
+        width: 100%;
+        margin: 0 auto;
+        .item_game{
+            width: 100%;
+            margin: 0 auto;
+            .game{
+                width:auto;
+            }
+        }
+    }
+    #nav_games{
+        width: 103%;
+        ul {
+            li{
+                margin: 0px 0px;
+                list-style-type: none;
+                float: left;
+                list-style: none;
+                border-radius: 3px;
+                margin-right: 2px;
+                padding: 1px;
+            }
+        }
+    }
+    #contact_content {
+        width: 90%;
+        .contact{
+            float: none;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            left: 40%;
+        }
+        #contact_form{
+            float: none;
+            width:100%;
+            margin: 0 auto;
+        }
+        #sidebar_contact{
+            float: none;
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+    #container_download{
+        width: 100%;
+        margin: 0 auto;
+        .item_download{
+            width: 50%;
+            margin: 0 auto;
+            float: left;
+            .download{
+                width:auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #container_download{
+        width: 100%;
+        margin: 0 auto;
+        .item_download{
+            width: 90%;
+            float: none;
+        }
+    }
+    
+}
+@media screen and (min-width:520px){
+    
+}
