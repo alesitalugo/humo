@@ -1,0 +1,118 @@
+@import 'compass';
+
+.slider_images{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    .slider_images_scroll{
+        position: relative;
+    }
+    .slide{
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+}
+#available_games{
+    width: 1100px;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+    }
+}
+#available_slider{
+    width: 1050px;
+    height: 270px;
+    overflow: hidden;
+    .available_slider_scroll{
+        height: 270px;
+        position: relative;
+    }
+    .slide{
+        width: 325px;
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        float: left;
+        color: #3954b9;
+        text-align: center;
+        .slide_img{
+            img{
+                border-radius: 10px;
+            }
+        }
+        .slide_info{
+            h3{
+                margin: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &.slide_left{
+            margin: 15px 30px 0 30px;
+            @include transform ( perspective(450px) rotateY(-10deg) scale(0.94) );
+        }
+        &.slide_right{
+            margin: 15px 30px 0 30px;
+            @include transform ( perspective(450px) rotateY(10deg) scale(0.94) );
+        }
+    }
+}
+#featured_game{
+    width: 100%;
+    overflow: auto;
+    h2{
+        text-align: center;
+    }
+}
+#featured_game_slider{
+    width: 100%;
+    overflow: auto;
+    background-color: #0f3ace;
+    .slide{
+        width: 1100px;
+        margin: 0 auto;
+        padding: 20px 0;
+        overflow: auto;
+        .slide_img{
+            float: left;
+            width: 530px;
+            img{
+                border-radius: 20px;
+            }
+        }
+        .slide_info{
+            width: 490px;
+            float: left;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .slider_images{
+        width: 100%;
+        .slide{
+        }
+    }
+    #available_games{
+        width: 100%;
+    }
+    #available_slider{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
