@@ -111,8 +111,69 @@
     #available_games{
         width: 100%;
     }
+
     #available_slider{
         width: 100%;
         margin: 0 auto;
+    }
+    #featured_game_slider{
+        .slide{
+            width: 100%;
+            .slide_img{
+                width: 40%;
+                img{
+                    width: 100%;
+                }
+            }
+            .slide_info{
+                float: left;
+                margin-left: 10px;
+                width: 55%;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    #featured_game_slider{
+        .slide{
+            .slide_img{
+                width: 100%;
+                clear: both;
+                float: none;
+                text-align: center;
+                img{
+                    width: auto;
+                }
+            }
+            .slide_info{
+                float: none;
+                margin: auto;
+                width: 100%;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #featured_game_slider{
+        .slide{
+            .slide_img{
+                img{
+                    width: 90%;
+                }
+            }
+        }
     }
 }
