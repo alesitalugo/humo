@@ -21,13 +21,19 @@ $('#show_responsive_menu').on('click', function(){
 	}
 });
 
-$('.filter-list li a').on('click', function(){
-	var categoryToShow = $(this).data('category');
-	var itemShow = $('#container_games').find('.'+categoryToShow);
-	console.log(categoryToShow, itemShow);
-	if($(itemShow).hasClass('categoryToShow')){
-		$('.item_game').hide();
-		//$('.'+categoryToShow).show();
+$('.filter-list li a').on('click', function( e  ){
+	e.preventDefault();
+	var category_to_show = $(this).data('category');
+	var items = $('#container_games .item_game');
+	if( category_to_show === 'all'){
+		$(items).fadeIn();
+	} else {
+		$(items).show();
+		$( items ).each(function() {
+			if( !$(this).hasClass( category_to_show ) ){
+				$(this).fadeOut();
+			}
+		});
 	}
 });
 
