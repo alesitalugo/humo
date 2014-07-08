@@ -2,6 +2,10 @@
 /* jshint camelcase: false */
 'use strict';
 
+$(window).on('load', function(){
+	$('.parallax_image h4').fadeIn(500);
+});
+
 var menu_show = 0;
 $('#show_responsive_menu').on('click', function(){
 	$(this).addClass('active');
@@ -22,7 +26,10 @@ $('#show_responsive_menu').on('click', function(){
 });
 
 $('.filter-list li a').on('click', function( e  ){
+
 	e.preventDefault();
+	$('.filter-list a').removeClass('active');
+	$(this).addClass('active');
 	var category_to_show = $(this).data('category');
 	var items = $('#container_games .item_game');
 	if( category_to_show === 'all'){
